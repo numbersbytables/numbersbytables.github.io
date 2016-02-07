@@ -27,6 +27,7 @@
 
                     jQuery.ajax({
                         url: 'http://www.esvapi.org/v2/rest/passageQuery',
+                        crossDomain: true,
                         data: {key: 'IP', passage: this.props.slice},
                         dataType: 'html',
                         success: function(data) {
